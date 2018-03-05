@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datenbanken zu den Schum Gedenkstätten</title>
+
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+
+        <!-- styles for included libraries -->
+
+        <!-- chartist -->
+        <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+
+        <!-- js needed in head -->
+
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h4><strong>2018-03-05</strong> | <a href="#">Mainz Coworking Area im Dock
+                    39</a></h4>
+                <h4><strong>Intensivworkshop Informationssysteme</strong></h4>
+                <h1 class="down-100">Epigraphische Datenbanken zu den Schum-Gedenkstätten</h1>
+                <h2 class="red up-25">Status Quo und Desiderata</h2>
+                <h4 class="down-100">
+                    <strong>Slides:</strong>
+                    <a href="https://kollatzthomas/github.io/#" title="View the presentation online"
+                        > https://kollatzthomas/github.io/20180305_Workshop_schum </a>
+                </h4>
+                <h5>
+                    <strong><a href="http://orcid.org/0000-0003-1904-1841">Thomas
+                        Kollatz</a></strong> | <img src="resources/img/Twitter_bird_logo_2012.svg"
+                        alt="Twitter" class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter">@kol_t</a>
+                    | <img src="resources/img/Octicons-mark-github.svg" alt="Twitter"
+                        class="gh-icon" />
+                    <a href="https://github.com/kollatzthomas/" title="Thomas Kollatz on GitHub"
+                        >KollatzThomas</a> | <a href="https://creativecommons.org/licenses/by/4.0/"
+                        >CC-BY 4.0</a>
+                </h5>
+            </div>
+            <div class="step">
+                <h2>Informationssyteme</h2>
+                <ol class="line-height-one-five">
+                    <li> epidat (2002-2018) </li>
+                    <li> GDKE-Eingabeformular (2009-2018) </li>
+                    <li> Schnittstellen </li>
+                </ol>
+            </div>
+            <div class="step">
+                <h1 class="red">01</h1>
+                <h2 class="line-height-one-five"> epidat </h2>
+            </div>
+            <div class="step">
+                <h2 class="red">Entwicklung <code>epidat</code></h2>
+                <table class="line-height-one-five medium">
+                    <tr>
+                        <th>wann</th>
+                        <th>was und wer</th>
+                    </tr>
+                    <tr>
+                        <td>2002-2006</td>
+                        <td>Grundstruktur und -funktionalität, Eingabemasken und Übersetzungsroutine
+                            für strukturierte Texterfassung im Rahmen der Erfassung des
+                            aschkenasischen Friedhofs Hamburg-Altona, Königstraße (6000 Objekte/1000
+                            Fragmente) (Thomas Kollatz, Dan Bondy, Desiree Schostak, Inna
+                            Goudz)</td>
+
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>Onlinegang von Anfang an unter offener Lizenz</td>
+
+                    </tr>
+                    <tr>
+                        <td>2006-2018</td>
+                        <td>Zahlreiche epigraphische Erfassungsprojekte u.a. 50 Friedhöfe des Linken
+                            Niederrheins sowie 16 Friedhöfe des Saarlandes</td>
+                    </tr>
+                    <tr>
+                        <td>2011-2018</td>
+                        <td>DARIAH: WebApp / Coding Da Vinci / Bilddatenverwaltung über TextGridRep
+                            aktuell: Kooperation mit Deutsche Inschriften Online (Dio): Torsten
+                            Schrade, Max Gründtgens (AdWlM)</td>
+                    </tr>
+                    <tr>
+                        <td>2012-2015</td>
+                        <td>Relationen im Raum. Visualisierunen topographischer Klein(st)strukturen
+                            u.a. Workshop mit dem BMBF-Projekt Inschriften im Bezugssystem im Raum
+                            (IBR) zum Gedenkfriedhof Mainz. Kooperation mit Partnern aus der
+                            historischen Bauforschung und Kunstgeschichte</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a
+                                href="resources/img/screencapture-steinheim-institut-de-cgi-bin-epidat-1520188104954.png"
+                                    ><img
+                                    src="resources/img/screencapture-steinheim-institut-de-cgi-bin-epidat-1520188104954.png"
+                                    title="spy-1" style="width:30rem" /></a>
+                        </figure></div>
+                    <div class="six columns">
+                        <h2 class="red">Beispiel</h2>
+                        <dl class="even-left">
+                            <dt>spy-1</dt>
+                            <dd>Speyer: Jizchak ben Menachem </dd>
+                            <dt>html</dt>
+                            <dd class="x-small"><a
+                                    href="http://steinheim-institut.de/cgi-bin/epidat?id=spy-1"
+                                    >http://steinheim-institut.de/cgi-bin/epidat?id=spy-1</a></dd>
+                            <dt>TEI XML</dt>
+                            <dd class="x-small"><a
+                                    href="http://steinheim-institut.de/cgi-bin/epidat?id=spy-1-teip5"
+                                    >http://steinheim-institut.de/cgi-bin/epidat?id=spy-1-teip5</a></dd>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h1 class="red">02</h1>
+                <h2 class="line-height-one-five"> GDKE-Eingabeformular </h2>
+            </div>
+            <div class="step">
+                <h2 class="red">Entwicklung <code>edit3</code></h2>
+                <table class="line-height-one-five medium">
+                    <tr>
+                        <th>wann</th>
+                        <th>was</th>
+                        <th>wer</th>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Erfassungskonzept erstellt auf Grundlage eines Planungsgesprächs am 14.
+                            Dezember 2009 in Duisburg</td>
+                        <td>Thomas Kollatz, Pia Heberer, Stefanie Fuchs, Tina Maul</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Evaluation und geringfügige Anpassung in der GDKE</td>
+                        <td>Thomas Kollatz, Pia Heberer, Stefanie Fuchs, Tina Maul, Susanne
+                            Krömker</td>
+                    </tr>
+                    <tr>
+                        <td>2011-2012</td>
+                        <td>Erweitert um Text, Übersetzung, Kommentar sowie Literatur zur Inschrift
+                            während der Speyer Kampagne</td>
+                        <td>Thomas Kollatz, Tina Maul, Dan Bondy</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Namensmodul / Kalenderkonversion (greg/jul - hebr)</td>
+                        <td>Thomas Kollatz</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Symbole und Ornamente, Materialien, Monitoring <code>work in
+                                progress</code></td>
+                        <td>Thomas Kollatz, Stefanie Fuchs, Katrin Schinken</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step">
+                <h2 class="red">Zugänge</h2>
+                <table class="line-height-one-five">
+                    <tr>
+                        <th>epidat</th>
+                        <th>edit3</th>
+                    </tr>
+                    <tr>
+                        <td>Philologie und historische Grundwissenschaften: Onomastik,
+                            Genealogie</td>
+                        <td>Kunstwissenschaft und Denkmalpflege</td>
+                    </tr>
+                    <tr>
+                        <td>textorientiert</td>
+                        <td>objektorientiert</td>
+                    </tr>
+                    <tr>
+                        <td>Text</td>
+                        <td>Form und Erhaltungszustand</td>
+                    </tr>
+                    <tr>
+                        <td>zahlreiche Zugangsoptionen und Perspektiven auf die Daten</td>
+                        <td><span class="highlight">???</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step">
+                <h1 class="red">02</h1>
+                <h2 class="line-height-one-five"> Schnittstellen </h2>
+            </div>
+            <div class="step">
+                <h2>Schnittstellen in epidat</h2>
+                <p>Beim Export aus <code>edit3</code> in  die Forschungsplattform für jüdische Grabsteinepigraphik <a href="http://steinheim-institut.de/cgi-bin/epidat">epidat</a>
+                    werden nicht sämtliche Daten aus dem Eingabeformular übertragen. Die exportierten Daten </p>
+                <ul class="line-height-one-five medium">
+                   
+                            <li>stehen unter einer offenen und freien Lizenz zur Verfügung, die Daten sind nachnutzbar</li>
+                            <li>Volltextsuche in Transkription und Übersetzung Suche</li>
+                            <li>zahlreiche Indizes stehen zur Verfügung</li>
+                            <li>Die Daten werden auch im epigraphischen Austausch- und Archivierungsformat EpiDoc TEI-XML P5 bereitgestellt<ul>
+                                    <li>Link zu sämtlichen epidat collections: <br/><a
+                                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=collections"
+                                            >http://www.steinheim-institut.de/cgi-bin/epidat?info=collections</a></li>
+                                    <li>link zu den resourcen<ul>
+                                            <li>Speyer: <a
+                                                  href="http://www.steinheim-institut.de/cgi-bin/epidat?info=resources-spy"
+                                                  >http://www.steinheim-institut.de/cgi-bin/epidat?info=resources-spy</a></li>
+                                        <li>Mainz: <a
+                                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=resources-mz1"
+                                            >http://www.steinheim-institut.de/cgi-bin/epidat?info=resources-mz1</a></li>
+                                        <li>Worms: <a
+                                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=resources-wrm"
+                                            >http://www.steinheim-institut.de/cgi-bin/epidat?info=resources-wrm</a></li>
+                                        </ul>
+                                    </li>
+                                </ul></li>
+                            <li>Weitere Formate stehen zur Verfügung u.a. CSV, RDF, Plaintext</li>
+                            <li>Zugangsoptionen und Austauschformate werden ständig erweitert </li>
+                        </ul>
+                
+            </div>
+            <div class="step">
+                <div class="centered">
+                    <h1>F I N I S</h1>
+                    <h2>Thank you</h2>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Literature &amp; Software</h2>
+                <h4>Literature</h4>
+                <ul class="small">
+                    <li> One </li>
+                    <li> Two </li>
+                    <li> Three </li>
+                </ul>
+                <h4>Software</h4>
+                <ul class="small">
+                    <li> One </li>
+                    <li> Two </li>
+                    <li> Three </li>
+                </ul>
+                <h4>Download</h4>
+                <ul class="small">
+                    <li>
+                        <a href="https://kollatzthomas.github.io/#">
+                            https://kollatzthomas.github.io/# </a>
+                    </li>
+                    <li> License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY
+                            4.0</a>, Thomas Kollatz </li>
+                </ul>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- chartist -->
+        <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>
+        <!-- codemirror -->
+        <script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+        var obj = impress();
+        obj.init();
+        initSlideNo(obj);
+    </script>
+    </body>
+</html>
